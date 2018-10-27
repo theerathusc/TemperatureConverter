@@ -15,8 +15,8 @@ public class Convert {
         this.number = number;
     }
 
-    public int convert_c_to_f() {
-        return (int) (number * 1.8) + 32;
+    public double convert_c_to_f() {
+        return (number * 1.8) + 32;
     }
 
     public double convert_f_to_c() {

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 int number = Integer.parseInt(input.getText().toString());
                 Convert convert = new Convert(number);
                 final TextView output = findViewById(R.id.output);
-                String show = Integer.toString(convert.convert_c_to_f());
+                String show = String.format("%.2f",convert.convert_c_to_f());
                 output.setText(show);
             }
         });
